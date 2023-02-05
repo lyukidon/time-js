@@ -1,4 +1,4 @@
-import format from './utils/format';
+import format from './utils/userFormat.js';
 
 const Date = (form) => {
 	console.log( format(form) )
