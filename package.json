@@ -1,8 +1,8 @@
 {
   "type": "module",
-  "name": "time",
+  "name": "time-get",
   "description": "- usage",
-  "version": "1.0.0",
+  "version": "0.1.0-beta.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/lyukidon/time-js.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "kingdon",
+    "email": "qgx99098@gmail.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lyukidon/time-js/issues"
   },
