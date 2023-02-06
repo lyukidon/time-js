@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "time-get",
+  "name": "@kingdon/time-get",
   "description": "- usage",
   "version": "0.1.0-beta.1",
   "main": "index.js",
