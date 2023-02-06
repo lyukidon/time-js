@@ -1,7 +1,4 @@
-import format from './utils/userFormat.js';
+import Date from './utils/date.js'
+import Time from './utils/time.js'
 
-const Date = (form) => {
-	console.log( format(form) )
-}
-
-Date('yy.dd.mm')
+export {Date, Time}

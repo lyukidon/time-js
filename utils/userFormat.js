@@ -3,15 +3,16 @@ function userFormat (string){
 	let userForm = {};
 	const mark = string.match(/[^a-zA-z]/g)
 	for (let i of time){
-		if (userForm[i]){
+		const _i = i.toUpperCase();
+		if (userForm[_i]){
 			userForm = {
 				...userForm,
-				[i] : userForm[i] + 1
+				[_i] : userForm[_i] + 1
 			}
 		}else{
 			userForm = {
 				...userForm,
-				[i] : 1
+				[_i] : 1
 			}
 		}
 	}
