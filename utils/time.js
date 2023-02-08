@@ -15,7 +15,6 @@ const Time = async (form) => {
         const { second } = await import("./utils/date.js");
         time = [...time, manageStr(second() + "", format.S)];
     }
-	console.log(combine(time,format.mark))
 	return combine(time,format.mark);
 }
 

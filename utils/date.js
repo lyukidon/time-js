@@ -15,7 +15,6 @@ const Date = async (form) => {
         const { day } = await import("./utils/dateData.js");
         date = [...date, manageStr(day() + "", format.D)];
     }
-	console.log(combine(date,format.mark))
 	return combine(date,format.mark);
 };
 
