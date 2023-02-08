@@ -1,5 +1,5 @@
 // ex) number: format.Y
-const manageStr = (string, number) => {
+export const manageStr = (string, number) => {
 	if (number <= string.length){
 
 		let data = [];
@@ -13,6 +13,6 @@ const manageStr = (string, number) => {
 };
 
 // data: array, symbol: array
-const combine = (data, mark) => {
+export const combine = (data, mark) => {
 	return data[0]+mark[0]+data[1]+mark[1]+data[2]
 }
