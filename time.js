@@ -1,4 +1,5 @@
-import userFormat from "./userFormat.js";
+import userFormat from "./utils/userFormat.js";
+import { manageStr, combine } from './utils/functions.js'
 
 const Time = async (form) => {
 	let time = [];
@@ -15,7 +16,6 @@ const Time = async (form) => {
         const { second } = await import("./utils/date.js");
         time = [...time, manageStr(second() + "", format.S)];
     }
-	console.log(combine(time,format.mark))
 	return combine(time,format.mark);
 }
 
