@@ -9,9 +9,10 @@ Date(string)
 Date('YY.MM.DD') // 23.02.06
 Date('YYYY.MM.DD') // 2023.02.06
 
-Time(string);
+Time(string , militaryTime : boolean);
 Time('HH:MM:SS') // 00:50:40
-Time('HH:MM:SS', false) // AM 00:50:40
+Time('HH:MM:SS', true) // 00:50:40
+Time('HH:MM:SS', false) // AM 0:50:40
 ```
 
 - Data format

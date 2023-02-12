@@ -1,8 +1,8 @@
 // ex) number: format.Y
-export const manageStr = (string, number) => {
+export const manageStr = (string : string, number : number) : string | undefined => {
 	if (number <= string.length){
 
-		let data = [];
+		let data : string[] = [];
 		for (let i = string.length - 1; i > string.length - number - 1; i--) {
 			data = [...data, string[i]];
 		}
@@ -13,6 +13,6 @@ export const manageStr = (string, number) => {
 };
 
 // data: array, symbol: array
-export const combine = (data, mark) => {
-	return data[0]+mark[0]+data[1]+mark[1]+data[2]
+export const combine = (data : string[], mark : string[]) : string => {
+	return data[0]+mark[0]+data[1]+mark[1]+data[2];
 }

@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lyukidon/time-js/issues"
   },
-  "homepage": "https://github.com/lyukidon/time-js#readme"
+  "homepage": "https://github.com/lyukidon/time-js#readme",
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
 }
