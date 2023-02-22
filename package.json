@@ -2,7 +2,7 @@
   "type": "module",
   "name": "@kingdon/time-get",
   "description": "- usage",
-  "version": "0.1.5-beta.1",
+  "version": "0.1.5-beta.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
