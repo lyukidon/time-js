@@ -14,5 +14,16 @@ export const manageStr = (string : string, number : number) : string | undefined
 
 // data: array, symbol: array
 export const combine = (data : string[], mark : string[]) : string => {
-	return data[0]+mark[0]+data[1]+mark[1]+data[2];
+	const cycle : number = data.length > mark.length ? data.length : mark.length
+	let array : string[] = [];
+	for (let i=0; i< cycle; i++){
+		if (data[i]){
+			array = [...array, data[i]]
+		}
+		if (mark[i]){
+			array = [...array, mark[i]]
+		}
+	}
+	console.log(array)
+	return array.join('' )
 }
