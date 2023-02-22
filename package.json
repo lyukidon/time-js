@@ -3,7 +3,7 @@
   "name": "@kingdon/time-get",
   "description": "- usage",
   "version": "0.1.4-beta.1",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
