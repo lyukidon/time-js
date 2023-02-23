@@ -7,12 +7,7 @@ export const hour = (militaryTime) => {
         return date.getHours() < 10 ? "0" + date.getHours() + "" : date.getHours() + "";
     }
     else {
-        if (date.getHours() > 12) {
-            return `PM ${date.getHours() - 12}`;
-        }
-        else {
-            return `AM ${date.getHours()}`;
-        }
+        return date.getHours() > 12 ? `PM ${date.getHours() - 12}` : `AM ${date.getHours()}`;
     }
 };
 export const minute = () => date.getMinutes() < 10 ? "0" + date.getMinutes() + "" : date.getMinutes() + "";

@@ -6,12 +6,7 @@ export const Time = (form, militaryTime) => {
     let time = [];
     const format = userFormat(form);
     if (format.H) {
-        if (militaryTime) {
-            time = [...time, manageStr(hour(militaryTime) + "", format.H)];
-        }
-        else {
-            time = [...time, manageStr(hour() + "", format.H)];
-        }
+        time = [...time, manageStr(hour(militaryTime) + "", format.H, militaryTime)];
     }
     if (format.M) {
         time = [...time, manageStr(minute() + "", format.M)];
@@ -35,3 +30,4 @@ export const Date = (form) => {
     }
     return combine(date, format.mark);
 };
+console.log(Time('hh:mm', false));

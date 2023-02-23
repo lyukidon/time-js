@@ -11,12 +11,8 @@ export const day = () : string =>
 export const hour = (militaryTime?:boolean | undefined) : string => {
     if (militaryTime || militaryTime === undefined){
         return date.getHours() < 10 ? "0" + date.getHours() + "" : date.getHours() + "";
-    } else {
-        if (date.getHours() > 12) {
-            return `PM ${date.getHours() - 12}`
-        } else {
-            return `AM ${date.getHours()}`
-        }
+    } else  {
+        return date.getHours() > 12 ? `PM ${date.getHours() - 12}` : `AM ${date.getHours()}`;
     }
 }
 
