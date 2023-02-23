@@ -3,7 +3,7 @@
 - usage
 
 ```javascript
-import {Date, Time} from '@kingdon/time-get'
+import {Date, Time} from '@kidon/time-get'
 
 Date(string)
 Date('YY.MM.DD') // 23.02.06
