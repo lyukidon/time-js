@@ -33,5 +33,3 @@ export const Date = (form : string) => {
     }
 	return combine(date,format.mark);
 };
-
-console.log(Time('hh:mm', false))
